@@ -24,6 +24,6 @@
     "require": {
         "symfony/yaml": "~2.5",
         "symfony/filesystem": "~2.5",
-        "d4rk4ng3l/advanced-oxid-modules":"1.0.0RC1"
+        "d4rk4ng3l/advanced-oxid-modules":"1.0.0-RC1"
     }
 }
