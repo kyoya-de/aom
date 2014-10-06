@@ -76,6 +76,8 @@ class InstallationHelper implements EventSubscriberInterface
                     $fs->remove($filename);
                 }
             }
+
+            $fs->remove(static::getPath('root') . '/.git');
         }
     }
 
