@@ -1,0 +1,6 @@
+/.idea
+/app/cache/
+/app/config/
+!app/cache/.gitkeep
+!app/config/.gitkeep
+/vendor

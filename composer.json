@@ -1,0 +1,27 @@
+{
+    "name": "d4rk4ng3l/aom",
+    "type":"project",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "autoload": {
+        "psr-0": { "": "src/", "D4rk4ng3lSetup": "app" }
+    },
+    "authors": [
+        {
+            "name": "Stefan Krenz",
+            "email": "info@kyoya.de"
+        }
+    ],
+    "scripts": {
+        "post-root-package-install": [
+            "D4rk4ng3lSetup\\Composer::hookRootPackageInstall"
+        ]
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "require": {
+        "symfony/yaml": "~2.5",
+        "symfony/filesystem": "~2.5"
+    }
+}
