@@ -5,8 +5,9 @@ namespace D4rk4ng3lSetup;
 use Composer\EventDispatcher\EventSubscriberInterface;
 use Composer\Script\CommandEvent;
 use Composer\Script\ScriptEvents;
-use Symfony\Component\Filesystem\Filesystem;
-use Symfony\Component\Yaml\Yaml;
+use D4rk4ng3lSetup\Filesystem\Filesystem;
+use D4rk4ng3lSetup\Yaml\Yaml;
+use Symfony\Component\HttpFoundation\File\File;
 
 class InstallationHelper implements EventSubscriberInterface
 {
@@ -36,7 +37,8 @@ class InstallationHelper implements EventSubscriberInterface
             ScriptEvents::POST_INSTALL_CMD => array(
                 array('setupDirectories', 512),
                 array('setupConfiguration', 256),
-                array('removeGitStuff', 0)
+                array('removeGitStuff', 128),
+                array('removeSetup', 0)
             ),
         );
     }
@@ -79,6 +81,12 @@ class InstallationHelper implements EventSubscriberInterface
 
             $fs->remove(static::getPath('root') . '/.git');
         }
+    }
+
+    public static function removeSetup(CommandEvent $event)
+    {
+        $fs = new Filesystem();
+        $fs->remove(__DIR__);
     }
 
     /**
