@@ -22,6 +22,6 @@
         "bin-dir": "bin"
     },
     "require": {
-        "d4rk4ng3l/advanced-oxid-modules":"dev-master"
+        "d4rk4ng3l/advanced-oxid-modules":"~1.0"
     }
 }
