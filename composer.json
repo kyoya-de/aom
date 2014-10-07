@@ -2,7 +2,7 @@
     "name": "d4rk4ng3l/aom",
     "type":"project",
     "minimum-stability": "dev",
-    "version":"1.0.0-RC1",
+    "version":"1.0.1",
     "license": "MIT",
     "autoload": {
         "psr-0": { "": "src/", "D4rk4ng3lSetup": "app" }
