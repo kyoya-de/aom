@@ -22,8 +22,6 @@
         "bin-dir": "bin"
     },
     "require": {
-        "symfony/yaml": "~2.5",
-        "symfony/filesystem": "~2.5",
         "d4rk4ng3l/advanced-oxid-modules":"dev-master"
     }
 }
