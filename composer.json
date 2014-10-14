@@ -1,7 +1,7 @@
 {
     "name": "d4rk4ng3l/aom",
     "type":"project",
-    "version":"1.0.2",
+    "version":"1.0.9",
     "license": "MIT",
     "autoload": {
         "psr-0": { "": "src/", "D4rk4ng3lSetup": "app" }
@@ -18,7 +18,7 @@
         ]
     },
     "config": {
-        "bin-dir": "bin"
+        "bin-dir": "app"
     },
     "require": {
         "d4rk4ng3l/advanced-oxid-modules":"~1.0"

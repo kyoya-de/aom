@@ -7,7 +7,6 @@ use Composer\Script\CommandEvent;
 use Composer\Script\ScriptEvents;
 use D4rk4ng3lSetup\Filesystem\Filesystem;
 use D4rk4ng3lSetup\Yaml\Yaml;
-use Symfony\Component\HttpFoundation\File\File;
 
 class InstallationHelper implements EventSubscriberInterface
 {

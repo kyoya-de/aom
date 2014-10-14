@@ -1,24 +1,21 @@
 Advanced OXID Module
 ====================
-
 The AOM generates "bridge" classes to use as module for the OXID eShop.
 
 Installation
 ============
-* Clone the repository
+Just create a new project using *composer*
 ```shell
-git clone http://github.com/D4rk4ng3l/advanced-oxid-modules.git
+composer create-project d4rk4ng3l/aom
 ```
-* Run
-```shell
-composer install
-```
-* Copy the directories *bin*, *lib* and *vendor* to the root of your OXID eShop installation. 
-* Adjust settings in *parameters.yml*
- 
+After the installation you can start to create your code.
+
+Documentation
+=============
+
+
 USAGE
 =====
-
 ```shell
-php bin/aom compile
+php app/aom compile
 ```
